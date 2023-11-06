@@ -20,6 +20,5 @@ function imprimirContactos() {
     for (let i = 0; i < contactos.length; i++) {
 
         console.log(contactos[i]);
-
     }
 }
