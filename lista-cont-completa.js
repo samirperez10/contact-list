@@ -14,3 +14,11 @@ function printContactos() {
         console.log(`${i + 1}. ${contactos[i].nombres} ${contactos[i].apellidos} - Teléfono: ${contactos[i].telefono} - Ubicación: ${contactos[i].ubicaciones[0].ciudad}, ${contactos[i].ubicaciones[0].dirección}`);
     }
 }
+function updateContacto(id, nombre) {
+    contactos = contactos.map(contacto => {
+        if (contacto.id === id) {
+            return { id, nombre };
+        }
+        return contacto;
+    });
+}
